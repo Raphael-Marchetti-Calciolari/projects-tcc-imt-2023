@@ -1,0 +1,98 @@
+{
+    "LinearRegression": {
+        "MSE": 16.46648089210626,
+        "Score": 96.64752287304013
+    },
+    "Ridge": {
+        "MSE": 17.838143001710954,
+        "Score": 96.36826066282667
+    },
+    "Lasso": {
+        "MSE": 15.519883670366834,
+        "Score": 96.84024441172947
+    },
+    "Lars": {
+        "MSE": 15.765992056275305,
+        "Score": 96.7901382147881
+    },
+    "ElasticNet": {
+        "MSE": 24.323246926479026,
+        "Score": 95.04793225044776
+    },
+    "BayesianRidge": {
+        "MSE": 17.583421428214606,
+        "Score": 96.42012045329952
+    },
+    "SGDRegressor": {
+        "MSE": 17.600858738346638,
+        "Score": 96.41657032113974
+    },
+    "TheilSenRegressor": {
+        "MSE": 16.439192734695823,
+        "Score": 96.6530785788497
+    },
+    "HuberRegressor": {
+        "MSE": 15.141516437773678,
+        "Score": 96.91727771964578
+    },
+    "PoissonRegressor": {
+        "MSE": 26.38896772644348,
+        "Score": 95.83028686265116
+    },
+    "SVR": {
+        "MSE": 240.92902160922705,
+        "Score": 50.94829068468697
+    },
+    "NuSVR": {
+        "MSE": 343.9262532515249,
+        "Score": 29.978669702311844
+    },
+    "KNeighborsRegressor": {
+        "MSE": 15.012492095524825,
+        "Score": 96.94354630484285
+    },
+    "RadiusNeighborsRegressor": {
+        "MSE": 49.53157821662842,
+        "Score": 89.9156666125867
+    },
+    "GaussianProcessRegressor": {
+        "MSE": 16.466500703774447,
+        "Score": 96.64751883950287
+    },
+    "DecisionTreeRegressor": {
+        "MSE": 16.466480892106258,
+        "Score": 96.64752287304013
+    },
+    "ExtraTreeRegressor": {
+        "MSE": 16.46648089210626,
+        "Score": 96.64752287304013
+    },
+    "BaggingRegressor": {
+        "MSE": 8.612154684286748,
+        "Score": 98.24661676152357
+    },
+    "AdaBoostRegressor": {
+        "MSE": 7.630628134419124,
+        "Score": 98.44644970272671
+    },
+    "ExtraTreesRegressor": {
+        "MSE": 16.466480892106063,
+        "Score": 96.64752287304017
+    },
+    "RandomForestRegressor": {
+        "MSE": 13.796141145740469,
+        "Score": 97.19118809085815
+    },
+    "GradientBoostingRegressor": {
+        "MSE": 16.4670649446266,
+        "Score": 96.64740396343655
+    },
+    "HistGradientBoostingRegressor": {
+        "MSE": 496.143352405673,
+        "Score": -1.0118222303690416
+    },
+    "MLPRegressor": {
+        "MSE": 112.66897894907387,
+        "Score": 77.06126905198273
+    }
+}
