@@ -49,7 +49,7 @@ class EssayDataDiggestor:
 		min_index = abs_diff.idxmin()
 		return min_index
 
-	def get_essay_number_from(self, filename:str):
+	def _get_essay_number_from(self, filename:str):
 		return int(filename.split('\\')[1].split('E')[1][0:2])
 
 	def get_labeled_essays(self, data_path:str):
@@ -59,7 +59,7 @@ class EssayDataDiggestor:
 		for dir_filename in os.listdir(data_path):
 			filename = os.path.join(data_path, dir_filename)
 			if os.path.isfile(filename):
-				essay_number = self.get_essay_number_from(filename)
+				essay_number = self._get_essay_number_from(filename)
 
 				if (dir_filename.startswith('E')): # Essay files
 					df = pd.read_excel(filename)
@@ -88,7 +88,7 @@ class EssayDataDiggestor:
 		for dir_file in os.listdir(data_path):
 			filename = os.path.join(data_path, dir_file)
 			if os.path.isfile(filename):
-				essay_number = self.get_essay_number_from(filename)
+				essay_number = self._get_essay_number_from(filename)
 				if (dir_file.startswith('E')):
 					df = pd.read_excel(filename)
 					df = self._convert_time_column_to_relative_seconds(df)
