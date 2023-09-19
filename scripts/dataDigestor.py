@@ -75,3 +75,18 @@ class DataDiggestor:
 					final_df = pd.concat([final_df, pd.DataFrame([line])], ignore_index=True)
 
 		return final_df
+	
+	def diggest_all_data_into_single_df(self, data_path:str):
+		final_df = pd.DataFrame()
+
+		for filename in os.listdir(data_path):
+			f = os.path.join(data_path, filename)
+			if os.path.isfile(f):
+				essay_number = f.split('\\')[1].split('E')[1][0:2]
+				if (filename.startswith('E')):
+					df = pd.read_excel(f)
+					df = self._convert_time_column_to_relative_seconds(df)
+					df['Ensaio'] = int(essay_number)
+					final_df = pd.concat([final_df, df], ignore_index=True)
+					
+		return final_df.dropna()
