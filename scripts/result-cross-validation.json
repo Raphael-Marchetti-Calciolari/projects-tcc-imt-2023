@@ -1,1 +1,26 @@
-{"PoissonRegressor": "-0.480 +/- 3.635", "AdaBoostRegressor": "-0.541 +/- 5.966", "ExtraTreesRegressor": "-0.580 +/- 5.778", "RandomForestRegressor": "-0.693 +/- 6.492", "HistGradientBoostingRegressor": "-0.856 +/- 6.724", "DecisionTreeRegressor": "-0.975 +/- 7.476", "BaggingRegressor": "-1.517 +/- 9.622", "NuSVR": "-1.737 +/- 5.573", "ElasticNet": "-1.960 +/- 9.256", "GradientBoostingRegressor": "-2.137 +/- 12.210", "GaussianProcessRegressor": "-2.744 +/- 9.621", "RadiusNeighborsRegressor": "-2.966 +/- 7.861", "SVR": "-4.647 +/- 14.386", "MLPRegressor": "-5.932 +/- 27.166", "ExtraTreeRegressor": "-6.422 +/- 29.240", "KNeighborsRegressor": "-6.425 +/- 28.679", "HuberRegressor": "0.518 +/- 1.434", "TheilSenRegressor": "0.629 +/- 1.020", "Ridge": "0.647 +/- 0.841", "LinearRegression": "0.657 +/- 0.848", "BayesianRidge": "0.668 +/- 0.799", "Lars": "0.703 +/- 0.475", "SGDRegressor": "0.706 +/- 0.616", "Lasso": "0.771 +/- 0.317"}
+{
+    "AdaBoostRegressor": "-0.345 +/- 5.182",
+    "PoissonRegressor": "-0.480 +/- 3.635",
+    "ExtraTreesRegressor": "-0.601 +/- 5.937",
+    "BaggingRegressor": "-0.781 +/- 6.811",
+    "ExtraTreeRegressor": "-0.790 +/- 6.745",
+    "HistGradientBoostingRegressor": "-0.856 +/- 6.724",
+    "DecisionTreeRegressor": "-0.891 +/- 7.162",
+    "RandomForestRegressor": "-1.117 +/- 8.180",
+    "NuSVR": "-1.737 +/- 5.573",
+    "ElasticNet": "-1.960 +/- 9.256",
+    "GradientBoostingRegressor": "-2.136 +/- 12.193",
+    "GaussianProcessRegressor": "-2.744 +/- 9.621",
+    "RadiusNeighborsRegressor": "-2.966 +/- 7.861",
+    "SVR": "-4.647 +/- 14.386",
+    "KNeighborsRegressor": "-6.425 +/- 28.679",
+    "MLPRegressor": "-6.950 +/- 30.873",
+    "HuberRegressor": "0.518 +/- 1.434",
+    "TheilSenRegressor": "0.614 +/- 1.072",
+    "Ridge": "0.647 +/- 0.841",
+    "LinearRegression": "0.657 +/- 0.848",
+    "BayesianRidge": "0.668 +/- 0.799",
+    "Lars": "0.703 +/- 0.475",
+    "SGDRegressor": "0.703 +/- 0.629",
+    "Lasso": "0.771 +/- 0.317"
+}
