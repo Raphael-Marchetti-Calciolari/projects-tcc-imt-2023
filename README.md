@@ -16,7 +16,7 @@ Repositorio para modelos e dados referentes ao trabalho de conclusão de curso "
     ```
 4. Certifique-se de que o seu ambiente foi ativado. O nome da pasta onde o seu ambiente virtual está armazenado deve aparecer do lado esquerda da linha do cmd.
 
-5. retorne ao diretório raiz do projeto, substitua <your_git_repo> pelo caminho do seu repositório
+5. retorne ao diretório raiz do projeto, substitua `<your_git_repo>` pelo caminho do seu repositório
     ```
     cd <your_git_repo>/projects-tcc-imt-2023
     ```
