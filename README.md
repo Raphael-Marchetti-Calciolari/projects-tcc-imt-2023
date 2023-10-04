@@ -4,8 +4,23 @@ Repositorio para modelos e dados referentes ao trabalho de conclusão de curso "
 # Criando um novo virtual environment
 
 ## Para windows
-- Abra uma nova instância do cmd
-- execute o comando `python -m venv /path/to/new/virtual/environment`, substituindo o diretório destino para um desejado
-- acesse `/path/to/new/virtual/environment/Scripts` e execute `activate`
-- retorne ao diretório raiz do projeto depois que `(venv)` estiver ativo
-- execute o comando `pip install -r .\requirements.txt` para instalar as dependências
+1. Abra uma nova instância do cmd
+2. execute o seguinte comando, substituindo **<environment_path>** pelo diretório onde você deseja armazenar o seu ambiente virtual.
+    ```
+    python -m venv <environment_path>
+    ```
+3. acesse `<environment_path>/Scripts` e execute `activate`. 
+    ```
+    cd <environment_path>/Scripts
+    activate
+    ```
+4. Certifique-se de que o seu ambiente foi ativado. O nome da pasta onde o seu ambiente virtual está armazenado deve aparecer do lado esquerda da linha do cmd.
+
+5. retorne ao diretório raiz do projeto
+    ```
+    cd <your_git_repo>/projects-tcc-imt-2023
+    ```
+5. execute o seguinte comando para instalar as dependências 
+    ```
+    pip install -r .\requirements.txt
+    ```
