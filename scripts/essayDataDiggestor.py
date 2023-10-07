@@ -28,7 +28,7 @@ class EssayDataDiggestor:
 		h_len = len(humidities)
 		if (h_len > 0):
 			total = math.fsum(humidities)
-			return round(total/h_len, 6)
+			return [round(total/h_len, 6), humidities]
 
 	def _get_time_in_seconds(self, time_object: datetime):
 		return time_object.hour * 3600 + time_object.minute * 60 + time_object.second + time_object.microsecond / 1e6
@@ -52,7 +52,7 @@ class EssayDataDiggestor:
 	def _get_essay_number_from(self, filename:str):
 		return int(filename.split('\\')[1].split('E')[1][0:2])
 
-	def get_labeled_essays(self, data_path:str):
+	def get_labeled_essays(self, data_path:str, get_measures_flag=False):
 		essays_df = pd.DataFrame()
 		final_df = pd.DataFrame()
 
@@ -73,10 +73,14 @@ class EssayDataDiggestor:
 					closest_line = self._get_closest_time_line(humidity_collected_time_in_seconds, current_essay)
 
 					df = pd.read_excel(filename, dtype=str)
-					humidity = self._get_humidity_levels(df)
+					humidity = self._get_humidity_levels(df)[0]
+					humidities = self._get_humidity_levels(df)[1]
 
 					current_humidity_essay_line = dict(essays_df.loc[closest_line])
-					current_humidity_essay_line['Umidade Produto [%]'] = humidity
+					current_humidity_essay_line['Umidade Média Produto [%]'] = humidity
+					if get_measures_flag:
+						for i, hum in enumerate(humidities):
+							current_humidity_essay_line[f'Umidade {i} Produto [%]'] = hum
 					current_humidity_essay_line['Ensaio'] = essay_number
 
 					final_df = pd.concat([final_df, pd.DataFrame([current_humidity_essay_line])]).reset_index(drop=True)
