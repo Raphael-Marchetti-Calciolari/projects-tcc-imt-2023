@@ -73,11 +73,10 @@ class EssayDataDiggestor:
 					closest_line = self._get_closest_time_line(humidity_collected_time_in_seconds, current_essay)
 
 					df = pd.read_excel(filename, dtype=str)
-					humidity = self._get_humidity_levels(df)[0]
-					humidities = self._get_humidity_levels(df)[1]
+					mean_humidity, humidities = self._get_humidity_levels(df)
 
 					current_humidity_essay_line = dict(essays_df.loc[closest_line])
-					current_humidity_essay_line['Umidade Média Produto [%]'] = humidity
+					current_humidity_essay_line['Umidade Média Produto [%]'] = mean_humidity
 					if get_measures_flag:
 						for i, hum in enumerate(humidities):
 							current_humidity_essay_line[f'Umidade {i} Produto [%]'] = hum
