@@ -31,7 +31,17 @@ A pesquisa não apenas ofereceu um método preciso para medir a umidade durante 
 
 # Sobre o repositório
 
-## Para windows
+## Estrutura de diretórios
+
+O repositório deste projeto está estruturado como o modelo a seguir:
+
+| Arquivo / Diretório                    | Conteúdos                                              |
+| -------------------------------------- | ------------------------------------------------------- |
+| `data/`                              | Todos os dados coletados durante os ensaios em laboratório |
+| `scripts/`                                | Scripts em python utilizados para o treinamento dos modelos |
+
+## Rodar o projeto
+### No Windows
 1. Abra uma nova instância do cmd
 2. execute o seguinte comando, substituindo `<environment_path>` pelo diretório onde você deseja armazenar o seu ambiente virtual.
     ```
